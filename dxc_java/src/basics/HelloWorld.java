@@ -1,11 +1,6 @@
 package basics;
 
 public class HelloWorld {
-	private static boolean isElgible(int age) {
-		if(age > 18) return true;
-		else return false;
-	}
-
 	public static void main(String[] args) {
 		Student abdul;
 		Student myStudent = new Student("abdul",888); 
@@ -23,11 +18,13 @@ public class HelloWorld {
 		System.out.println(abdul.getName());
 		System.out.println(Student.COLLEGE_NAME);
 		
-		/*int number = 20;
+		System.out.println(otherStudent.age);
+		
+		int number = 20;
 
 		printDigit(number);
 		
-		printNos();*/
+		printNos();
 
 	}
 
