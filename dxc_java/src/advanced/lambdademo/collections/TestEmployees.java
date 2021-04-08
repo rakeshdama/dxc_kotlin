@@ -23,9 +23,18 @@ public class TestEmployees {
 
 		Collections.sort(employees, c);
 	
-		for (Employee e : employees) {
+		for (Employee e : employees) 
 			System.out.println(e);
-		}
+		
+		System.out.println();
+		Comparator<Employee> c1 = (e1,e2) -> (e1.name).compareTo(e2.name);
+		
+		Collections.sort(employees, c1);
+		
+		for (Employee e : employees) 
+			System.out.println(e);
+		
+		
 	}
 
 }
