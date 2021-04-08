@@ -65,7 +65,7 @@ public class FirstLambda {
 		FunctionalInterface2 f1 = (a,b) -> a+b;
 		System.out.println("the sum from our functional interface  " +f1.Isum(5, 4));
 		
-		FunctionalInterface1 fi = () -> System.out.println("Hello from lambda");
+		FunctionalInterface1 fi = () -> {System.out.println("Hello from lambda");};
 		fi.m1();
 		
 	}
