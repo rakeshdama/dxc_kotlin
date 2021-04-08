@@ -15,17 +15,17 @@ public class ListNumber {
 		al.add(18);
 		al.add(21);
 		
-		System.out.println(al);
+		System.out.println("Without sort"+al);
 
 		
 		Collections.sort(al);
 		
-		System.out.println(al);
+		System.out.println("Using only sort"+al);
 		
 		Comparator<Integer> c = (o1,o2) -> (o1 < o2)? -1 : (o1 > o2) ? 1 : 0;
 		Collections.sort(al,c);
 		
-		System.out.println(al);
+		System.out.println("using sort and comparator"+al);
 		
 	}
 	
