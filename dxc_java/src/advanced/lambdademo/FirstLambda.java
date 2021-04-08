@@ -21,6 +21,8 @@ import java.util.function.Function;
  *  
  *  	here function is a interface.
  *  
+ *  	In case of Lambda expressions .class file is not generated.
+ *  
  *  	The symbol of Lambda is ( -> )
  * 
  *   	1. Functional Interfaces.
@@ -34,7 +36,20 @@ import java.util.function.Function;
  *  	Functional Interface  =>
  *  		If a interface having only one abstract method its called functional interface.
  *  		We can mark an interface as functional with the annotation @FunctionalInterface.
+ *  	
  *  
+ *  	Functional Interface wrt inheritance
+ *  
+ *			@FunctionalInterface  
+ *  		Interface A{
+ *  			public void m1();
+ *  		}
+ *  	
+ *  		Interface B extends A{
+ *  			public void m2()
+ *  		}
+ *  
+ *  		
  *
  */
 public class FirstLambda {
