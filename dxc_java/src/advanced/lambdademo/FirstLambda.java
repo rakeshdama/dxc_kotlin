@@ -37,6 +37,7 @@ import java.util.function.Function;
  *  		If a interface having only one abstract method its called functional interface.
  *  		We can mark an interface as functional with the annotation @FunctionalInterface.
  *  	
+ *  	A marker interface is an interface that has no methods or constants inside it. 
  *  
  *  	Functional Interface wrt inheritance
  *  
