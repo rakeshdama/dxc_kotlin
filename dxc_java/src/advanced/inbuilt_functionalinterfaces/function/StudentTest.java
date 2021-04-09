@@ -21,10 +21,12 @@ public class StudentTest {
 			System.out.println(s.name+" got "+f.apply(s));
 		}
 	}
-	static void generateMarks() {
+	public static ArrayList<Student> generateMarks() {
 		students = new ArrayList<Student>();
 		students.add(new Student("Rakesh" ,900));
 		students.add(new Student("Sridhar" ,800));
 		students.add(new Student("Doremon" ,500));
+		
+		return students;
 	}
 }
