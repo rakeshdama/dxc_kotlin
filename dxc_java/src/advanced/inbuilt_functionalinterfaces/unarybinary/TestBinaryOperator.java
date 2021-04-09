@@ -13,5 +13,7 @@ public class TestBinaryOperator {
 		BinaryOperator<String> bo = (s1, s2) -> s1 + s2 ;
 		System.out.println(bo.apply("Rakesh ", "Royal"));
 		
+		BinaryOperator<Integer> bi = (s1, s2) -> s1 + s2 ;
+		System.out.println(bi.apply(18, 42));
 	}
 }
