@@ -11,9 +11,9 @@ public class StudentPredicate {
 		
 		generateMarks();
 		
-		Predicate<Student> p = (s) -> (s.m1 + s.m2 + s.m3) > 75 ;
+		Predicate<Student> p = (s) -> (s.m1 + s.m2 + s.m3)/3 > 75 ;
 		for(Student s: students) {
-		System.out.println(s.name+" has "+(p.test(s) ? "Passed": "Failed"));
+		System.out.println("Student named "+s.name+" has "+(p.test(s) ? "Passed": "Failed"));
 		}
 		
 	}
@@ -21,6 +21,7 @@ public class StudentPredicate {
 	static void generateMarks() {
 		students = new ArrayList<Student>();
 		
+		students.add(new Student("Rakesh Dama",80, 75, 75));
 		students.add(new Student("Rakesh",50, 50, 50));
 		students.add(new Student("Doremon", 20, 30, 20));
 		
