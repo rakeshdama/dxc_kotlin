@@ -21,7 +21,6 @@ public class FunctionDemo {
 		Function<String, String> f4 = s-> s.toUpperCase();
 		System.out.println(f4.apply("Rakesh"));
 		
-		
 	}
 	
 	
