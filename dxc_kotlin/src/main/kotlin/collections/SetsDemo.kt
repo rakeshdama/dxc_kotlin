@@ -7,7 +7,7 @@ class SetsDemo {
             return true
         }
         else {
-            println("Issue $str alread exists")
+            println("Issue $str already exists")
             return false
         }
   }
