@@ -2,9 +2,11 @@ package collections
 
 fun main() {
 
-    var x = listOf<Int>(1, 2, 3, -4, 5, -6, -2, 5)
+    var x = listOf<Int>(1, 2, 3, -4, 5, 6, -2, 5)
 
     println(x.filter { i -> i > 0 })
+    println("The first positive even number is ${x.find { i -> i%2==0 }}")
+    println("the last positive even number is ${x.findLast { i -> i%2==0 && i > 0 }}")
     //println(x.filter { it > 1 })
 
     var doubleTheNumber = x.map { it -> it * it }
@@ -13,6 +15,10 @@ fun main() {
 
     println("If any number greater than 20 => ${doubleTheNumber.any { it > 20 }}")
     println("are all numbers greater than 0 => ${doubleTheNumber.all { it > 0 }}")
-    println("are none of the numbers greater than 20 => ${doubleTheNumber.none { it > 50 }}")
+    println("are none of the numbers greater than 20 => ${doubleTheNumber.none { it > 50 }}\n")
 
+
+    var words = listOf<String>("first", "line", "is", "the", "fake", "one")
+    println("The first word is ${words.find { it.startsWith("f") } }")
+    println("The first word is ${words.findLast { i -> i.startsWith("f") } }")
 }
