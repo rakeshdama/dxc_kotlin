@@ -14,4 +14,5 @@ fun main() {
     println("If any number greater than 20 => ${doubleTheNumber.any { it > 20 }}")
     println("are all numbers greater than 0 => ${doubleTheNumber.all { it > 0 }}")
     println("are none of the numbers greater than 20 => ${doubleTheNumber.none { it > 50 }}")
+
 }
