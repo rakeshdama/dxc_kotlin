@@ -10,6 +10,21 @@ fun main() {
     println("This will print the count ${x.count{ it % 2 ==0 && it >0 }}")
     //println(x.filter { it > 1 })
 
+    println( "\n the even numbers are ${x.partition { it % 2 == 0 && it > 0}  } \n")
+
+    val bagFruits = listOf<String>("Apple", "banana", "Mango")
+    val bagClothes = listOf<String>("Shirt", "Pant")
+
+    val cart = listOf(bagFruits, bagClothes)
+    val mapBag = cart.map { it }
+    val flatMapBag = cart.flatMap { it }
+
+    println(cart)
+    println(mapBag)
+    println(flatMapBag)
+    println()
+
+
     var doubleTheNumber = x.map { it -> it * it }
 
     println(doubleTheNumber)
