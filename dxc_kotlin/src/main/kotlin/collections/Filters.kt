@@ -7,6 +7,7 @@ fun main() {
     println(x.filter { i -> i > 0 })
     println("The first positive even number is ${x.find { i -> i%2==0 }}")
     println("the last positive even number is ${x.findLast { i -> i%2==0 && i > 0 }}")
+    println("This will print the count ${x.count{ it % 2 ==0 && it >0 }}")
     //println(x.filter { it > 1 })
 
     var doubleTheNumber = x.map { it -> it * it }
