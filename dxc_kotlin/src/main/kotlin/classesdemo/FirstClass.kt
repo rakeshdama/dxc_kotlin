@@ -1,4 +1,4 @@
-package ClassesDemo
+package classesdemo
 
 fun main() {
 
