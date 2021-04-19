@@ -7,7 +7,7 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="/home/daredevil/Downloads/spcorejars/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
-	<classpathentry kind="lib" path="/home/daredevil/Downloads/spcorejars/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="/home/daredevil/Downloads/spcorejars/org.springframework.core-3.0.1.RELEASE-A.jar" sourcepath="/home/daredevil/Downloads/spcorejars/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="lib" path="/home/daredevil/Downloads/spcorejars/org.springframework.context-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="lib" path="/home/daredevil/Downloads/spcorejars/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="lib" path="/home/daredevil/Downloads/spcorejars/org.springframework.asm-3.0.1.RELEASE-A.jar"/>

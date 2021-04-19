@@ -9,4 +9,27 @@
 		<property name="name" value="Rakesh Dama"></property>
 	</bean>
 
+
+	<bean id="employee" class="first_spring.Employee">
+		<constructor-arg value="21" type="int"></constructor-arg>
+		<constructor-arg value="Rakesh Dama"></constructor-arg>
+	</bean>
+
+	<bean id = "q" class = "constructor.injection.Question">
+	
+	<constructor-arg value = "18"></constructor-arg>
+	<constructor-arg value = "Rakesh Dama"></constructor-arg>
+	<constructor-arg>
+	
+	<list>
+	
+	<value>Rakesh Royal</value>
+	<value>Hacker</value>
+	<value>Indian Top Hacker</value>
+	
+	</list>
+	
+	</constructor-arg>
+	
+	</bean>
 </beans> 
